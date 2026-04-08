@@ -3,42 +3,45 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "c1932fef-9a4f-4b12-a05e-1e80ec648b09")
-	(paper "A4")
+	(paper "A1")
 	(lib_symbols
-		(symbol "Device:R"
+		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0)
+				(offset 0.254)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "R"
-				(at 0 0 90)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at -1.778 0 90)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -59,7 +62,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -70,7 +73,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "R res resistor"
+			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -81,7 +84,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -92,12 +95,25 @@
 					)
 				)
 			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
 					(stroke
-						(width 0.254)
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -105,10 +121,10 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "C_Small_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
+					(at 0 2.54 270)
+					(length 2.032)
 					(name ""
 						(effects
 							(font
@@ -125,8 +141,8 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
+					(at 0 -2.54 90)
+					(length 2.032)
 					(name ""
 						(effects
 							(font
@@ -653,49 +669,2139 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 552.45 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01b62e51-8f60-44d4-a0f1-375271fc7c2f")
+	)
+	(junction
+		(at 445.77 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "070acbca-627f-4515-8540-34a10ca64803")
+	)
+	(junction
+		(at 49.53 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b6eab33-bd1c-40c5-8dfa-693fb55d7b7a")
+	)
+	(junction
+		(at 232.41 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d294903-dfb0-47f8-be88-f7933cd00cf5")
+	)
+	(junction
+		(at 247.65 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d7547e7-6532-4f0e-9ccd-4243339bee07")
+	)
+	(junction
+		(at 491.49 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e13a99c-4dce-414c-8705-806f0f3492a6")
+	)
+	(junction
+		(at 278.13 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c63b759-4261-4c90-8d83-b1d3070835ee")
+	)
+	(junction
+		(at 110.49 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f2149da-3dbb-4221-8182-e17259daf8f2")
+	)
+	(junction
+		(at 64.77 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21623fdf-b506-4880-920c-2d1ce5913183")
+	)
+	(junction
+		(at 613.41 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2409f005-d946-414b-8163-6455e3ec33f5")
+	)
+	(junction
+		(at 567.69 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25a5dc9f-8dbf-4175-9d3e-08a46dde98ef")
+	)
+	(junction
+		(at 384.81 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27feb2af-f68e-4ab7-9ab6-333109e7d790")
+	)
+	(junction
+		(at 171.45 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "291295b8-bdf5-40dc-a237-6745e6b6f4da")
+	)
+	(junction
+		(at 430.53 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2982b7a1-9364-41ca-9b1b-1217f190c37d")
+	)
+	(junction
+		(at 217.17 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3321f424-58d3-41c1-871b-b2a49201c22f")
+	)
+	(junction
+		(at 247.65 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3958fa1d-6217-4d74-bc24-678649e24c94")
+	)
+	(junction
+		(at 232.41 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39adf4ce-bddb-4c4c-a4b2-ced88b51ff41")
+	)
+	(junction
+		(at 278.13 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a47a82d-1193-424a-82cb-e7faa90bec51")
+	)
+	(junction
+		(at 369.57 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c25f76b-5256-4f18-ac1a-b19a48b40726")
+	)
+	(junction
+		(at 49.53 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42247f21-898f-4cc5-8e0f-f1b932f165ec")
+	)
+	(junction
+		(at 171.45 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "444e7dc7-24a8-4240-b8d3-374ad6ff3491")
+	)
+	(junction
+		(at 140.97 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4989cb4b-ad91-43e4-982a-9636236a8f2b")
+	)
+	(junction
+		(at 293.37 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d1a9340-9ea7-40a9-bae2-360529016a24")
+	)
+	(junction
+		(at 354.33 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4dfcdfb0-5698-4a47-bee8-6cf13fbefdaf")
+	)
+	(junction
+		(at 186.69 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "575fd5f3-42bd-4cc0-98e3-e4745d4c2030")
+	)
+	(junction
+		(at 35.56 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58dc7625-00c3-4452-999e-af1e8e81eee6")
+	)
+	(junction
+		(at 80.01 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a20770a-4b9c-4517-9548-a03d568bb3c6")
+	)
+	(junction
+		(at 140.97 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d21b7c2-116e-4967-9fd7-b9e7dc64090b")
+	)
+	(junction
+		(at 125.73 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "605da759-b031-45a5-903e-1ba8a22d1c9b")
+	)
+	(junction
+		(at 491.49 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60978e96-2d0a-4ef6-8d69-ccdff7d68711")
+	)
+	(junction
+		(at 186.69 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63c5b340-c39c-4f5d-b78f-834a320717d5")
+	)
+	(junction
+		(at 64.77 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "663c3e7f-1fa6-4eeb-84b8-f8257c5a20e5")
+	)
+	(junction
+		(at 95.25 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71cdfec4-b8e8-47a2-8226-acbaed49a6a9")
+	)
+	(junction
+		(at 80.01 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72c46aed-0e32-45d8-8c1e-9894217dac08")
+	)
+	(junction
+		(at 461.01 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76232e06-be66-4781-b14c-9abdf24d4856")
+	)
+	(junction
+		(at 354.33 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77591f55-22f7-4cb7-bdad-19922bb4ef81")
+	)
+	(junction
+		(at 400.05 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "780a94e6-3a9b-4def-8817-bdab31bd58d0")
+	)
+	(junction
+		(at 323.85 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e1da153-df82-46b5-a20e-ddf251478624")
+	)
+	(junction
+		(at 384.81 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7fcbcc2d-8a46-4408-9efb-b22961525426")
+	)
+	(junction
+		(at 506.73 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "855bb5c6-8f69-4633-a6ae-f619885e025f")
+	)
+	(junction
+		(at 110.49 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "864938eb-6116-489a-a9ee-e4d1d0fe5652")
+	)
+	(junction
+		(at 156.21 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87acddf6-ab79-4071-959c-877128eecc9d")
+	)
+	(junction
+		(at 293.37 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94f6ad87-bf72-4f8b-ad30-8e9d0ab52944")
+	)
+	(junction
+		(at 308.61 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "959beb6c-b69b-40e4-8d93-b958b90fdc0b")
+	)
+	(junction
+		(at 201.93 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99bb8976-71b6-4f4c-bbb7-ea2a3ca9e7a4")
+	)
+	(junction
+		(at 445.77 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a2204ba-543e-460a-afe9-2f1ceb754219")
+	)
+	(junction
+		(at 613.41 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a9796ab-1540-473c-af2c-0bbd2e9a9e10")
+	)
+	(junction
+		(at 415.29 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b152efa-32b4-40ea-b1b8-cac100171e19")
+	)
+	(junction
+		(at 552.45 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9fdf70b4-0090-403b-9268-f3452314144a")
+	)
+	(junction
+		(at 598.17 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a37e7982-36ef-4a04-a41e-7d9b7ddf8099")
+	)
+	(junction
+		(at 598.17 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a618f524-aa13-44a3-b21f-54277e80c83f")
+	)
+	(junction
+		(at 582.93 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a78034f2-5f0b-4c01-9bf6-b2bce097e786")
+	)
+	(junction
+		(at 339.09 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8a9540f-0983-49be-8036-0ed016d5b9c5")
+	)
+	(junction
+		(at 262.89 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa70502d-ebc2-4d53-a1b8-6612d89d4820")
+	)
+	(junction
+		(at 217.17 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac1901b1-c174-47b7-8919-3f26ba152815")
+	)
+	(junction
+		(at 415.29 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aedf3f3f-c483-4794-a20f-b78bb1b4f59c")
+	)
+	(junction
+		(at 521.97 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1fbd4ba-4b8c-4781-a491-1afe46494eed")
+	)
+	(junction
+		(at 262.89 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3177db6-52b2-4fdb-b156-c2eb73c2c090")
+	)
+	(junction
+		(at 567.69 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b38159bc-e9ca-4f42-a2ce-6014c167c8dc")
+	)
+	(junction
+		(at 430.53 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b556c2f5-9f1d-4f9e-be0e-bfd75a2f5921")
+	)
+	(junction
+		(at 476.25 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9e63969-4deb-4b66-9efc-db5b8829c8ff")
+	)
+	(junction
+		(at 476.25 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c622bae2-1cea-4aed-aa6d-be8f3581e526")
+	)
+	(junction
+		(at 35.56 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca257570-adc1-4220-b550-78fac94c2e4d")
+	)
+	(junction
+		(at 537.21 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce195667-fc65-4d90-acac-77107f9608fe")
+	)
+	(junction
+		(at 35.56 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d174e6c2-2232-42cc-b3dc-bc7fb18fb23d")
+	)
+	(junction
+		(at 506.73 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d25aa214-6138-4a71-b946-adcb5fd6f3ab")
+	)
+	(junction
+		(at 339.09 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6ffafb8-4d1c-402b-9b26-4bd463f37f14")
+	)
+	(junction
+		(at 582.93 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dff5e939-b35d-45d8-8f2d-836ee5a312e4")
+	)
+	(junction
+		(at 461.01 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3bbc6eb-66af-44de-abb4-98df0567d1f2")
+	)
+	(junction
+		(at 201.93 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e98a8a34-5e9c-4d84-8423-f89366cc5722")
+	)
+	(junction
+		(at 521.97 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb65de5a-66d4-45c3-86ae-8d296e976007")
+	)
+	(junction
+		(at 35.56 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb83c393-0b2a-4fca-9720-2c1968a07350")
+	)
+	(junction
+		(at 369.57 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed024042-c658-44f9-ba28-db4f46419455")
+	)
+	(junction
+		(at 537.21 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edff5e7e-5f7e-4c36-987f-6b29c4141a3e")
+	)
+	(junction
+		(at 95.25 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0e1420f-7e71-4aee-a788-80ac53bf61de")
+	)
+	(junction
+		(at 125.73 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2da347d-f221-4858-90a8-d409129c7e48")
+	)
+	(junction
+		(at 308.61 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4ad9e78-7a63-411b-bb37-aed514941dc3")
+	)
+	(junction
+		(at 156.21 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f641bc9d-350e-4a17-a2db-7f685cd01cc3")
+	)
+	(junction
+		(at 400.05 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcac197c-597b-49ea-99de-4f760ed92a9c")
+	)
+	(junction
+		(at 323.85 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd2d39df-5692-414c-aa91-899399e3b0fc")
+	)
 	(wire
 		(pts
-			(xy 77.47 33.02) (xy 82.55 33.02)
+			(xy 156.21 26.67) (xy 171.45 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0780bb90-abc6-4c6b-a547-f020cbd7a41c")
+		(uuid "03071e74-96ec-4b5b-affe-90cf986cfa9d")
 	)
 	(wire
 		(pts
-			(xy 35.56 33.02) (xy 41.91 33.02)
+			(xy 163.83 34.29) (xy 179.07 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "77fd2a09-ac8e-4067-b004-f18a52d2c12f")
+		(uuid "0414ed00-6383-4fd9-9c13-68b1b8b4e188")
 	)
 	(wire
 		(pts
-			(xy 57.15 33.02) (xy 62.23 33.02)
+			(xy 499.11 34.29) (xy 514.35 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d34f6e06-ff29-453e-854c-786032c95cc6")
+		(uuid "05b8ba62-60fb-4601-bd66-da09ab023dca")
 	)
-	(label "LED_IN"
-		(at 35.56 33.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
+	(wire
+		(pts
+			(xy 80.01 41.91) (xy 95.25 41.91)
 		)
-		(uuid "b2f7d335-a877-4ad1-908b-43cb190ac755")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05cf7b12-de03-4f36-90f9-73b91ce70190")
 	)
-	(global_label "5V_RGB_OUT"
+	(wire
+		(pts
+			(xy 552.45 26.67) (xy 567.69 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05d692e0-e98b-4948-8d00-05b2e3567efc")
+	)
+	(wire
+		(pts
+			(xy 537.21 31.75) (xy 537.21 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0754f284-8712-4f28-862c-c25fe8288272")
+	)
+	(wire
+		(pts
+			(xy 346.71 34.29) (xy 361.95 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a3879c5-8e6b-45dc-99de-8b50fcb58a1c")
+	)
+	(wire
+		(pts
+			(xy 17.78 31.75) (xy 17.78 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d44fa2a-2fde-4192-9c8f-ade82329d057")
+	)
+	(wire
+		(pts
+			(xy 262.89 26.67) (xy 278.13 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eaaa481-07ba-425e-972b-52f114914f37")
+	)
+	(wire
+		(pts
+			(xy 339.09 19.05) (xy 339.09 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ee95ca9-d4f1-4f7d-8b59-7c48bf92deda")
+	)
+	(wire
+		(pts
+			(xy 201.93 36.83) (xy 201.93 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1046f034-8123-4c63-83dc-0cdfea3a1f4d")
+	)
+	(wire
+		(pts
+			(xy 316.23 34.29) (xy 331.47 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "121da28f-d956-4715-89cb-dbd4a910de21")
+	)
+	(wire
+		(pts
+			(xy 308.61 19.05) (xy 308.61 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1253f3a0-32b9-49b7-80ff-84391ac1d378")
+	)
+	(wire
+		(pts
+			(xy 293.37 31.75) (xy 293.37 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12ab1fb3-1630-4501-bd19-9ba32416f0d7")
+	)
+	(wire
+		(pts
+			(xy 529.59 34.29) (xy 544.83 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14bb048d-3f60-4e4b-a4d3-34dbc51d180c")
+	)
+	(wire
+		(pts
+			(xy 171.45 41.91) (xy 186.69 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14c9060d-fced-4437-98c3-d0d9f62371c8")
+	)
+	(wire
+		(pts
+			(xy 384.81 41.91) (xy 400.05 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14d396af-92f8-4675-9910-de4174039db1")
+	)
+	(wire
+		(pts
+			(xy 171.45 36.83) (xy 171.45 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18114bb6-a860-4092-9b1f-e2d2d24fcda2")
+	)
+	(wire
+		(pts
+			(xy 613.41 19.05) (xy 613.41 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19ff3f4e-d70a-4638-ae64-ffd69cecaeef")
+	)
+	(wire
+		(pts
+			(xy 232.41 41.91) (xy 247.65 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1af425f6-63a1-4682-8a45-2b07b1be0bad")
+	)
+	(wire
+		(pts
+			(xy 354.33 41.91) (xy 369.57 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b547446-4d58-4e60-8a62-a02220622b7a")
+	)
+	(wire
+		(pts
+			(xy 95.25 19.05) (xy 95.25 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e10cc37-2677-4465-9851-cb250cd65adc")
+	)
+	(wire
+		(pts
+			(xy 217.17 19.05) (xy 217.17 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e2b64b3-1233-4a3a-87ff-c0c7adfc9f47")
+	)
+	(wire
+		(pts
+			(xy 194.31 34.29) (xy 209.55 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e413ad1-2f37-4179-93f2-b0fd35d987c4")
+	)
+	(wire
+		(pts
+			(xy 491.49 19.05) (xy 491.49 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e50672b-4d13-4d6f-b696-ed44f548aa50")
+	)
+	(wire
+		(pts
+			(xy 110.49 36.83) (xy 110.49 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fd403e1-1def-437a-801d-009a0a23c98d")
+	)
+	(wire
+		(pts
+			(xy 49.53 26.67) (xy 64.77 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "200b81c2-ab1b-4b9a-8cd7-76b05280eba3")
+	)
+	(wire
+		(pts
+			(xy 567.69 31.75) (xy 567.69 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20568bbd-5e33-4ae0-a5a7-91fe442eba7b")
+	)
+	(wire
+		(pts
+			(xy 20.32 59.69) (xy 35.56 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20afb6ae-5480-4888-ade4-4525e0dfc891")
+	)
+	(wire
+		(pts
+			(xy 430.53 41.91) (xy 445.77 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21f85cb7-1245-4644-b332-2799b0dfa050")
+	)
+	(wire
+		(pts
+			(xy 201.93 31.75) (xy 201.93 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22ef7299-7218-448d-9c6b-61bf49a91407")
+	)
+	(wire
+		(pts
+			(xy 102.87 34.29) (xy 118.11 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23266f4a-bfa9-4b8e-94da-d673cdb6eb1f")
+	)
+	(wire
+		(pts
+			(xy 621.03 34.29) (xy 621.03 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "264b7f65-5637-4fdf-9093-1e2e8e181e92")
+	)
+	(wire
+		(pts
+			(xy 278.13 26.67) (xy 293.37 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2893976a-c84f-4523-895b-a57f3947c475")
+	)
+	(wire
+		(pts
+			(xy 537.21 26.67) (xy 552.45 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28af5a2a-7542-4c9d-bd12-19bdfafbaa52")
+	)
+	(wire
+		(pts
+			(xy 72.39 34.29) (xy 87.63 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28afe3a4-7603-4a8e-938e-eaa28b3dd6b6")
+	)
+	(wire
+		(pts
+			(xy 293.37 36.83) (xy 293.37 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a65ac55-07b4-4f2a-a1b1-36f6b6170f80")
+	)
+	(wire
+		(pts
+			(xy 293.37 41.91) (xy 308.61 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea09c8d-a6bc-4e96-864f-8c22c72e4c2b")
+	)
+	(wire
+		(pts
+			(xy 217.17 41.91) (xy 232.41 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ecdc0b4-5bee-46b1-af1d-47392d2af9d7")
+	)
+	(wire
+		(pts
+			(xy 369.57 41.91) (xy 384.81 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "310e0026-8dd0-4366-9bbd-29b11af8ecdd")
+	)
+	(wire
+		(pts
+			(xy 323.85 36.83) (xy 323.85 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "368ca1b3-1e10-4433-b989-e6235f302908")
+	)
+	(wire
+		(pts
+			(xy 506.73 41.91) (xy 521.97 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "428b8e3e-564c-4e17-aeb5-94d360dadb77")
+	)
+	(wire
+		(pts
+			(xy 171.45 31.75) (xy 171.45 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43f9d1e3-f508-462e-8b24-2795682e2c36")
+	)
+	(wire
+		(pts
+			(xy 339.09 26.67) (xy 354.33 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46234869-9f87-4654-889c-b44fd735bdca")
+	)
+	(wire
+		(pts
+			(xy 400.05 41.91) (xy 415.29 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4680abf5-c273-4f45-baf2-1a391bed85ba")
+	)
+	(wire
+		(pts
+			(xy 285.75 34.29) (xy 300.99 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46e6b584-7c13-449f-b1e7-8865c0c71667")
+	)
+	(wire
+		(pts
+			(xy 567.69 26.67) (xy 582.93 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c279b94-2c7d-40ff-a0db-f4091ba14f3c")
+	)
+	(wire
+		(pts
+			(xy 537.21 36.83) (xy 537.21 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c432795-b5ee-4fc7-8149-70baa07b2ded")
+	)
+	(wire
+		(pts
+			(xy 521.97 41.91) (xy 537.21 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dc7d16e-839c-47bc-b0d8-b517ea209914")
+	)
+	(wire
+		(pts
+			(xy 20.32 69.85) (xy 20.32 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e334ef2-6787-40e0-9922-c455c2405352")
+	)
+	(wire
+		(pts
+			(xy 171.45 26.67) (xy 186.69 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f0ca5ec-76d5-4cbd-baf0-498958e116d8")
+	)
+	(wire
+		(pts
+			(xy 262.89 31.75) (xy 262.89 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5038cfc6-7a36-4820-87e0-9c9fe5e6f433")
+	)
+	(wire
+		(pts
+			(xy 247.65 19.05) (xy 247.65 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5046da79-c221-4b70-9485-a2d3c212bc40")
+	)
+	(wire
+		(pts
+			(xy 64.77 41.91) (xy 80.01 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51aaeb99-ffca-4975-b98f-5df9ee65a348")
+	)
+	(wire
+		(pts
+			(xy 35.56 26.67) (xy 49.53 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52b1e6fb-f776-42be-8660-acf224aa69f6")
+	)
+	(wire
+		(pts
+			(xy 201.93 41.91) (xy 217.17 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52b7253f-7269-46f0-ba30-57aa1fab6e40")
+	)
+	(wire
+		(pts
+			(xy 468.63 34.29) (xy 483.87 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53e567cb-4f11-4f28-a4bb-9ddcce2123d9")
+	)
+	(wire
+		(pts
+			(xy 80.01 36.83) (xy 80.01 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54601262-d891-4b7d-9058-d567609d566d")
+	)
+	(wire
+		(pts
+			(xy 247.65 41.91) (xy 262.89 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57485de1-b0db-4d4b-9bf4-e26c98bcf1eb")
+	)
+	(wire
+		(pts
+			(xy 35.56 41.91) (xy 49.53 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "576aee88-9d7a-4539-b17a-dabb64b7833c")
+	)
+	(wire
+		(pts
+			(xy 201.93 26.67) (xy 217.17 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57969c8c-6282-46b5-b813-ea74aced267f")
+	)
+	(wire
+		(pts
+			(xy 308.61 41.91) (xy 323.85 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57fa3d39-91c2-4694-a7ed-b6cbdfb51a33")
+	)
+	(wire
+		(pts
+			(xy 567.69 36.83) (xy 567.69 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58e39d5a-c935-4781-b3bb-5890463bd110")
+	)
+	(wire
+		(pts
+			(xy 95.25 41.91) (xy 110.49 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c7e8756-ff3f-476f-929c-dc59b2e35884")
+	)
+	(wire
+		(pts
+			(xy 400.05 19.05) (xy 400.05 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5db8ad07-daff-4d24-bbd4-c9f276a114bf")
+	)
+	(wire
+		(pts
+			(xy 384.81 26.67) (xy 400.05 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e843349-5b2b-4897-ba94-afe285863aae")
+	)
+	(wire
+		(pts
+			(xy 27.94 46.99) (xy 27.94 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f66afff-0e18-4b53-9900-7a768559d7c9")
+	)
+	(wire
+		(pts
+			(xy 278.13 41.91) (xy 293.37 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fb61219-864d-47da-b96f-b00313750188")
+	)
+	(wire
+		(pts
+			(xy 590.55 34.29) (xy 605.79 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "619a06cf-6bdb-45a6-9031-122c8723247d")
+	)
+	(wire
+		(pts
+			(xy 445.77 31.75) (xy 445.77 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61c8529b-c7f2-4078-8df8-bf11c010d469")
+	)
+	(wire
+		(pts
+			(xy 140.97 26.67) (xy 156.21 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6202b4b8-bd6f-4c46-83d2-fd7bdd0e388b")
+	)
+	(wire
+		(pts
+			(xy 110.49 26.67) (xy 125.73 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6262a6e2-4e8d-4aa4-ab95-575907969270")
+	)
+	(wire
+		(pts
+			(xy 506.73 26.67) (xy 521.97 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63ad2771-5ae3-4f2b-89a1-bf28f3476d94")
+	)
+	(wire
+		(pts
+			(xy 598.17 26.67) (xy 613.41 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65f07db1-45cc-4c73-b550-268c61286ec7")
+	)
+	(wire
+		(pts
+			(xy 35.56 52.07) (xy 35.56 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6737fee0-1336-4a0e-9298-2a732d3cd36b")
+	)
+	(wire
+		(pts
+			(xy 17.78 36.83) (xy 17.78 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67796731-5f65-4780-9f20-cbae3d283277")
+	)
+	(wire
+		(pts
+			(xy 232.41 26.67) (xy 247.65 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eb8da8a-2b4b-477d-b741-fb4522971f36")
+	)
+	(wire
+		(pts
+			(xy 232.41 31.75) (xy 232.41 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "708b8363-ecd6-4be5-9170-bf5b457bb943")
+	)
+	(wire
+		(pts
+			(xy 125.73 26.67) (xy 140.97 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72c4f566-af6f-4b02-a140-c34680f5c6e0")
+	)
+	(wire
+		(pts
+			(xy 582.93 19.05) (xy 582.93 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74629f4b-3a26-48fc-b70c-1a2e22fd36fd")
+	)
+	(wire
+		(pts
+			(xy 430.53 26.67) (xy 445.77 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7852fca9-4944-43ef-a1bb-8344b5b2a17e")
+	)
+	(wire
+		(pts
+			(xy 80.01 31.75) (xy 80.01 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79ab9e84-4eaf-4c98-a07e-a428de0d6eab")
+	)
+	(wire
+		(pts
+			(xy 140.97 36.83) (xy 140.97 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7db96aae-e8a7-41a5-a60d-7dc4acf25b30")
+	)
+	(wire
+		(pts
+			(xy 377.19 34.29) (xy 392.43 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "815c0340-c78a-42d8-908a-26db1db56aac")
+	)
+	(wire
+		(pts
+			(xy 369.57 26.67) (xy 384.81 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "820a6c5b-b1cc-4748-a4de-1f728732bbf6")
+	)
+	(wire
+		(pts
+			(xy 156.21 41.91) (xy 171.45 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "829560a1-5f59-4e5b-93ea-030ac2713d35")
+	)
+	(wire
+		(pts
+			(xy 140.97 31.75) (xy 140.97 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83511fcb-7b23-4091-ac3e-b2971a57d7b9")
+	)
+	(wire
+		(pts
+			(xy 354.33 36.83) (xy 354.33 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "881d1acd-9f8d-44ec-a7a9-011274dadea5")
+	)
+	(wire
+		(pts
+			(xy 537.21 41.91) (xy 552.45 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88bafc2c-66d7-43d0-9566-813e3dfcd13e")
+	)
+	(wire
+		(pts
+			(xy 369.57 19.05) (xy 369.57 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88d380c4-1d30-4d02-b8fa-f81c28c33e60")
+	)
+	(wire
+		(pts
+			(xy 17.78 26.67) (xy 35.56 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "891f3774-b75e-4d60-91b1-ae54ce1752bb")
+	)
+	(wire
+		(pts
+			(xy 582.93 26.67) (xy 598.17 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ace1f38-baa7-4335-8c48-5639740a018f")
+	)
+	(wire
+		(pts
+			(xy 133.35 34.29) (xy 148.59 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b89006f-f94d-4f94-8936-d1b78496f4eb")
+	)
+	(wire
+		(pts
+			(xy 323.85 26.67) (xy 339.09 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e393366-9af5-43b8-b8b3-dd1278f69d34")
+	)
+	(wire
+		(pts
+			(xy 35.56 19.05) (xy 35.56 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90e37c5b-f43b-4e19-ad47-697122346afc")
+	)
+	(wire
+		(pts
+			(xy 43.18 34.29) (xy 57.15 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9177235d-cf8f-4616-a441-1fcde0d0cfd6")
+	)
+	(wire
+		(pts
+			(xy 461.01 26.67) (xy 476.25 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91cc6f43-38c4-44a1-843e-03004f5a881c")
+	)
+	(wire
+		(pts
+			(xy 49.53 36.83) (xy 49.53 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "933dbd03-b787-4a49-9177-b0cd72695a73")
+	)
+	(wire
+		(pts
+			(xy 232.41 36.83) (xy 232.41 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93971c01-7bad-4af3-acbb-28f850bab326")
+	)
+	(wire
+		(pts
+			(xy 339.09 41.91) (xy 354.33 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93d886dd-8f41-4ddc-b88e-8aea3ae2c619")
+	)
+	(wire
+		(pts
+			(xy 186.69 26.67) (xy 201.93 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "951e081e-ce9d-4b1c-9796-06eca8e2039a")
+	)
+	(wire
+		(pts
+			(xy 17.78 41.91) (xy 35.56 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "958b7d6f-9585-4875-9618-d3490afc9487")
+	)
+	(wire
+		(pts
+			(xy 506.73 36.83) (xy 506.73 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95bae21a-b628-409d-b4d4-5781dfa06453")
+	)
+	(wire
+		(pts
+			(xy 407.67 34.29) (xy 422.91 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95e3c060-d59b-41c7-9c21-de71d2b77fd1")
+	)
+	(wire
+		(pts
+			(xy 110.49 41.91) (xy 125.73 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "989885ed-01e9-47c4-bd50-2d5f2082a193")
+	)
+	(wire
+		(pts
+			(xy 598.17 41.91) (xy 613.41 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99df61f2-19a6-4774-b949-5323fdd50c13")
+	)
+	(wire
+		(pts
+			(xy 415.29 31.75) (xy 415.29 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c6c1ab8-fbb5-41d8-ad23-6093ebc80040")
+	)
+	(wire
+		(pts
+			(xy 445.77 41.91) (xy 461.01 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d23b87a-8081-4eb1-beff-100ddeb31297")
+	)
+	(wire
+		(pts
+			(xy 461.01 41.91) (xy 476.25 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e7141a1-6869-44a2-84ba-b75a499660f2")
+	)
+	(wire
+		(pts
+			(xy 491.49 26.67) (xy 506.73 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e8243b6-b563-48a1-83b8-fa99c3b61f60")
+	)
+	(wire
+		(pts
+			(xy 308.61 26.67) (xy 323.85 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ecb2a44-97dc-46ac-b8d1-e8658b7e73cc")
+	)
+	(wire
+		(pts
+			(xy 476.25 41.91) (xy 491.49 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0fe444f-7814-4a1a-a72c-6e473bd230fa")
+	)
+	(wire
+		(pts
+			(xy 598.17 36.83) (xy 598.17 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a153229d-f333-4136-96f1-86988120e49d")
+	)
+	(wire
+		(pts
+			(xy 384.81 31.75) (xy 384.81 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a225f687-4e23-495a-8eeb-06eb2491dcdb")
+	)
+	(wire
+		(pts
+			(xy 415.29 36.83) (xy 415.29 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7af7379-04e8-4b44-93bd-3c9cbd4a1c59")
+	)
+	(wire
+		(pts
+			(xy 49.53 41.91) (xy 64.77 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa7dd1d5-7ab0-4081-8bf3-322042848da8")
+	)
+	(wire
+		(pts
+			(xy 506.73 31.75) (xy 506.73 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa81c2dc-a6a9-4928-b205-49b76747bfb8")
+	)
+	(wire
+		(pts
+			(xy 354.33 31.75) (xy 354.33 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acc4b3ab-4cf9-4580-938d-7ae41134e9db")
+	)
+	(wire
+		(pts
+			(xy 323.85 31.75) (xy 323.85 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adc7368f-6ab1-4041-896b-dfe12542b620")
+	)
+	(wire
+		(pts
+			(xy 323.85 41.91) (xy 339.09 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af5dc46a-74ce-4a3b-8aca-ee4f1bb6d870")
+	)
+	(wire
+		(pts
+			(xy 430.53 19.05) (xy 430.53 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b453e481-3d9d-4fe4-b61b-6df0a4da4ce3")
+	)
+	(wire
+		(pts
+			(xy 224.79 34.29) (xy 240.03 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4892a0e-ee5d-4e83-88f8-6fae3391aa38")
+	)
+	(wire
+		(pts
+			(xy 278.13 19.05) (xy 278.13 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6b69a1e-0037-4a07-9424-f6a60e7c79b5")
+	)
+	(wire
+		(pts
+			(xy 384.81 36.83) (xy 384.81 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b96c5a63-ad19-4ed9-bb29-f1614cd455c4")
+	)
+	(wire
+		(pts
+			(xy 521.97 26.67) (xy 537.21 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9e079e2-0e33-4d3e-907c-59651863a22c")
+	)
+	(wire
+		(pts
+			(xy 552.45 41.91) (xy 567.69 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbc1ebf4-965c-4459-a80f-c207b3f94ac1")
+	)
+	(wire
+		(pts
+			(xy 598.17 31.75) (xy 598.17 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf95cd00-d73c-492e-a97c-a9c645893777")
+	)
+	(wire
+		(pts
+			(xy 293.37 26.67) (xy 308.61 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c50762d7-5552-4864-b723-0ddbcf4b5f2f")
+	)
+	(wire
+		(pts
+			(xy 95.25 26.67) (xy 110.49 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c87a4519-b99b-467d-bba5-d42d9d0ffddf")
+	)
+	(wire
+		(pts
+			(xy 262.89 36.83) (xy 262.89 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8f9549c-2013-4980-881d-55697e1e4e17")
+	)
+	(wire
+		(pts
+			(xy 110.49 31.75) (xy 110.49 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca67e89f-baba-40c9-b293-6b7358658002")
+	)
+	(wire
+		(pts
+			(xy 400.05 26.67) (xy 415.29 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce2432e8-5a57-4877-877c-502d9bdccf4e")
+	)
+	(wire
+		(pts
+			(xy 125.73 41.91) (xy 140.97 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceb2211e-bfd6-4230-9495-fe9221e25f26")
+	)
+	(wire
+		(pts
+			(xy 476.25 26.67) (xy 491.49 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf2b3bf8-ac71-415e-bdda-c03503543abc")
+	)
+	(wire
+		(pts
+			(xy 49.53 31.75) (xy 49.53 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfecdb30-0520-4e72-8973-10411c8b1deb")
+	)
+	(wire
+		(pts
+			(xy 186.69 41.91) (xy 201.93 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d00e0daf-6721-4843-bebd-a75aef7c8826")
+	)
+	(wire
+		(pts
+			(xy 247.65 26.67) (xy 262.89 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d03e1f0e-f701-4d1f-b749-4597b2a5ec81")
+	)
+	(wire
+		(pts
+			(xy 64.77 26.67) (xy 80.01 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0e76d69-2ee2-4803-9feb-5dbdfca1e63f")
+	)
+	(wire
+		(pts
+			(xy 140.97 41.91) (xy 156.21 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1ebd450-358b-4cbe-b922-a3ea8fd3ba34")
+	)
+	(wire
+		(pts
+			(xy 156.21 19.05) (xy 156.21 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d231cd40-f676-428a-bfc1-3c5060986828")
+	)
+	(wire
+		(pts
+			(xy 621.03 46.99) (xy 27.94 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3b77102-427e-4115-8a24-4e4042e3a78e")
+	)
+	(wire
+		(pts
+			(xy 20.32 64.77) (xy 20.32 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5c74542-8d1b-43a7-823d-b43ac081ffc1")
+	)
+	(wire
+		(pts
+			(xy 186.69 19.05) (xy 186.69 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d91c05a1-8450-421f-9305-2982d03f3b29")
+	)
+	(wire
+		(pts
+			(xy 476.25 36.83) (xy 476.25 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d980e4fe-5d94-499e-8ba9-4231574687b2")
+	)
+	(wire
+		(pts
+			(xy 255.27 34.29) (xy 270.51 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9841da1-999c-48ab-80e9-e54eafcea522")
+	)
+	(wire
+		(pts
+			(xy 445.77 36.83) (xy 445.77 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db298721-b5d1-4bf9-a77d-7fa0bb9fbc39")
+	)
+	(wire
+		(pts
+			(xy 125.73 19.05) (xy 125.73 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db958c40-2f1d-4550-ae21-4a74649b57c6")
+	)
+	(wire
+		(pts
+			(xy 262.89 41.91) (xy 278.13 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd217379-ba48-4125-9f24-7d40907f8330")
+	)
+	(wire
+		(pts
+			(xy 80.01 26.67) (xy 95.25 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e24fdba0-82d3-4279-a186-6316b53269f5")
+	)
+	(wire
+		(pts
+			(xy 521.97 19.05) (xy 521.97 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3bd8fcc-9dc8-47e1-84c0-8c2440c163e7")
+	)
+	(wire
+		(pts
+			(xy 552.45 19.05) (xy 552.45 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e44d96cc-e9a8-4243-8c48-5fd56a755fd9")
+	)
+	(wire
+		(pts
+			(xy 491.49 41.91) (xy 506.73 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e49731c7-5a4a-4e7b-94b3-22c75a2085cf")
+	)
+	(wire
+		(pts
+			(xy 20.32 74.93) (xy 35.56 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5e82940-eb42-44ab-9fad-30e7be3a811e")
+	)
+	(wire
+		(pts
+			(xy 415.29 41.91) (xy 430.53 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e67bbfa4-e08f-480f-828c-7fe713b26d31")
+	)
+	(wire
+		(pts
+			(xy 64.77 19.05) (xy 64.77 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9191d4c-db7f-4a1a-bb3a-3e2b4e21b027")
+	)
+	(wire
+		(pts
+			(xy 217.17 26.67) (xy 232.41 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e95d0796-6603-467a-bd9b-3fb698e5781a")
+	)
+	(wire
+		(pts
+			(xy 582.93 41.91) (xy 598.17 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eba5a25f-1d97-4120-bfc1-16b225568152")
+	)
+	(wire
+		(pts
+			(xy 461.01 19.05) (xy 461.01 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec477588-17dc-4a86-af5f-4479350da12f")
+	)
+	(wire
+		(pts
+			(xy 476.25 31.75) (xy 476.25 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0bc239b-ef51-42b5-bd35-538568ab2053")
+	)
+	(wire
+		(pts
+			(xy 438.15 34.29) (xy 453.39 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f10af346-f60e-4f52-ace6-e107b2919da9")
+	)
+	(wire
+		(pts
+			(xy 445.77 26.67) (xy 461.01 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f235100b-acb2-47a5-b752-b39c89c25ea2")
+	)
+	(wire
+		(pts
+			(xy 354.33 26.67) (xy 369.57 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f27fc895-e41d-481a-841b-85281bd703ab")
+	)
+	(wire
+		(pts
+			(xy 560.07 34.29) (xy 575.31 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2dd9515-61e2-42c1-90b2-207e13f365f1")
+	)
+	(wire
+		(pts
+			(xy 567.69 41.91) (xy 582.93 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f74ad904-f441-404f-8d19-26ba68af9652")
+	)
+	(wire
+		(pts
+			(xy 415.29 26.67) (xy 430.53 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe5ad59d-bb28-4785-9d84-bdf2dcaeaf67")
+	)
+	(global_label "A2"
 		(shape input)
-		(at 27.94 33.02 180)
+		(at 27.94 34.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -703,9 +2809,9 @@
 			)
 			(justify right)
 		)
-		(uuid "20356b3c-a982-45b2-9fd0-c579ba0fff9b")
+		(uuid "dc453d5c-0596-4dd1-aef5-b517048f6aa5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 13.2829 33.02 0)
+			(at 22.6567 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -718,8 +2824,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 90.17 17.78 0)
+		(lib_id "Device:C_Small")
+		(at 415.29 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -727,30 +2833,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "122ab065-6477-4638-b2c2-ffbd38b19b01")
-		(property "Reference" "#PWR032"
-			(at 90.17 21.59 0)
-			(hide yes)
+		(uuid "0274e4db-3a2f-455d-a3d7-9fd03b0bafa1")
+		(property "Reference" "C24"
+			(at 416.56 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "+5V_LED"
-			(at 90.17 13.97 0)
+		(property "Value" "100n"
+			(at 416.56 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 17.78 0)
+			(at 415.29 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -761,7 +2868,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 17.78 0)
+			(at 415.29 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 415.29 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c1c6e7ee-735b-4517-b3b6-a1f5577ea9fa")
+		)
+		(pin "1"
+			(uuid "117ecac4-3818-4da3-9426-254e0a72ee1d")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 613.41 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "02fbfd5f-3755-468b-96ae-007b65ead553")
+		(property "Reference" "#PWR068"
+			(at 613.41 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 613.41 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 613.41 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 613.41 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -772,7 +2959,497 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 90.17 17.78 0)
+			(at 613.41 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "61a8fc9c-f991-464f-9712-5e076c15b5e9")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 582.93 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "044c2fa9-24da-4d6d-819e-8d0cbab93a10")
+		(property "Reference" "LED19"
+			(at 582.93 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 582.93 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 582.93 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 582.93 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 582.93 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "e5724f6a-1d98-49da-b894-940e5dd424f8")
+		)
+		(pin "3"
+			(uuid "bf24386c-2929-4635-a652-6c8f67a67252")
+		)
+		(pin "2"
+			(uuid "c7143e6a-db5b-4f8e-a341-1e0d92ee21c0")
+		)
+		(pin "1"
+			(uuid "d2ac8c47-4cfd-4d9f-ac4c-42d764ac645f")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 552.45 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "06660cc5-104a-4d24-98ba-081394822be9")
+		(property "Reference" "#PWR064"
+			(at 552.45 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 552.45 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 552.45 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 552.45 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 552.45 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0fd520a4-8ce4-4b0f-b428-34e0cee0240d")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 339.09 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "091c6ca3-b135-4f86-83ff-e783754e9745")
+		(property "Reference" "LED11"
+			(at 339.09 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 339.09 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 339.09 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 339.09 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "d9ef4e1b-74d8-4a41-9d93-5e14a27e83fa")
+		)
+		(pin "3"
+			(uuid "09f29cb5-7fc9-4e12-aed7-58e3023ae64f")
+		)
+		(pin "2"
+			(uuid "e9afa1d7-2487-4fb7-a708-2dc816670d19")
+		)
+		(pin "1"
+			(uuid "bf6aad59-0a9a-4a6b-9723-18b2af49bf54")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 262.89 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "09c165ad-9482-403f-ba13-a8323484ec1f")
+		(property "Reference" "C19"
+			(at 264.16 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 264.16 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 262.89 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2b62ccf0-f965-41cf-b4fc-904ef9a975cf")
+		)
+		(pin "1"
+			(uuid "797e9b00-9281-4962-8e89-55ff6219a709")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 430.53 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0af494d3-6cf8-456b-a26c-6dd727fff8d9")
+		(property "Reference" "LED14"
+			(at 430.53 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 430.53 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 430.53 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 430.53 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 430.53 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "62737f4e-f1eb-4b30-9be0-04525078aa8a")
+		)
+		(pin "3"
+			(uuid "03184559-8c85-4e24-b5de-443bb384e909")
+		)
+		(pin "2"
+			(uuid "a55729d2-e267-4d2e-819c-850606b4e8ab")
+		)
+		(pin "1"
+			(uuid "fdd2d910-6c00-49a9-80d0-5ac0805405d9")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 95.25 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "122ab065-6477-4638-b2c2-ffbd38b19b01")
+		(property "Reference" "#PWR032"
+			(at 95.25 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 95.25 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 95.25 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -796,7 +3473,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 49.53 17.78 0)
+		(at 339.09 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -804,9 +3481,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "3c0838e9-75b1-4098-840c-0a10a0fa42b9")
-		(property "Reference" "#PWR030"
-			(at 49.53 21.59 0)
+		(uuid "129a7e41-292e-42c9-baa5-8fcb9689a77c")
+		(property "Reference" "#PWR040"
+			(at 339.09 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -817,7 +3494,7 @@
 			)
 		)
 		(property "Value" "+5V_LED"
-			(at 49.53 13.97 0)
+			(at 339.09 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -827,7 +3504,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 17.78 0)
+			(at 339.09 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -838,7 +3515,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 17.78 0)
+			(at 339.09 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -849,7 +3526,1121 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 49.53 17.78 0)
+			(at 339.09 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1dcf7640-d3ab-4dc5-acca-e4f79efdbcb8")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 582.93 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "150e3e84-4789-46fc-8ede-5089fd79c1a3")
+		(property "Reference" "#PWR067"
+			(at 582.93 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 580.898 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 582.93 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 582.93 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 582.93 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "152311f5-afcb-4ba7-968b-5d3f67412cd4")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 278.13 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1783bb13-7b26-4e83-af70-cb8032fd5fcf")
+		(property "Reference" "#PWR054"
+			(at 278.13 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 276.098 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 278.13 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "57747234-187e-4608-be8b-934899341e62")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 156.21 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "17bfd8dc-3b54-44c6-8210-12a820a0d8f5")
+		(property "Reference" "#PWR034"
+			(at 156.21 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 156.21 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 156.21 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59b477ad-5d45-471c-b29a-11b3622da1cd")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 613.41 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1fe34e5e-4376-444b-b028-3335630bf474")
+		(property "Reference" "LED20"
+			(at 613.41 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 613.41 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 613.41 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 613.41 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 613.41 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "a21ab20f-30e7-4808-ab0d-27c7133d9506")
+		)
+		(pin "3"
+			(uuid "a33ce644-ac2a-471c-ad4d-3b35ec5e9109")
+		)
+		(pin "2"
+			(uuid "2d3a175d-e532-45da-a21b-670e907f8492")
+		)
+		(pin "1"
+			(uuid "7a59b631-dc41-4288-8f12-e70a5f55b3df")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 552.45 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "235ee98b-2193-4d5f-8604-7fc8838bb728")
+		(property "Reference" "#PWR065"
+			(at 552.45 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 550.418 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 552.45 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 552.45 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 552.45 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87e371fc-a2d7-4b10-8799-19096efa262e")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 171.45 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "23fcb320-02b2-4889-9ffb-e61e94361d4d")
+		(property "Reference" "C16"
+			(at 172.72 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 172.72 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 171.45 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2cf125d9-ec6f-4bbe-b1ab-d872a9b3e06a")
+		)
+		(pin "1"
+			(uuid "5449bcbc-d442-4b20-b040-f5f60f28da88")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 186.69 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2c0c3c44-d468-4d65-ac92-755a55f2410c")
+		(property "Reference" "LED6"
+			(at 186.69 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 186.69 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 186.69 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 186.69 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "34a79c0a-9ca0-47fe-9005-a57a1feb0404")
+		)
+		(pin "3"
+			(uuid "ba46ed41-250a-48b0-ba68-309eeb65af5d")
+		)
+		(pin "2"
+			(uuid "5a92850c-17a9-44b8-9cc8-2bfae634b135")
+		)
+		(pin "1"
+			(uuid "3c5736bb-adc1-4e2e-ad05-f04f5ffe7f0a")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 140.97 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d0a5455-62be-475c-98dc-d1282ca00be4")
+		(property "Reference" "C15"
+			(at 142.24 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 142.24 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 140.97 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ba27a968-313e-46ec-ab3e-bcfb80d48785")
+		)
+		(pin "1"
+			(uuid "b662cee4-1740-40a8-ac46-3b11f5504673")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 400.05 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2e1ca31e-4d9f-4d99-a73a-7e265047fafa")
+		(property "Reference" "#PWR042"
+			(at 400.05 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 400.05 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 400.05 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 400.05 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 400.05 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "964e23f1-5105-4383-b92f-88e4f163cb85")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 156.21 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "31681d5a-271c-4f84-9fd9-98ca8e3ff40c")
+		(property "Reference" "LED5"
+			(at 156.21 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 156.21 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 156.21 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 156.21 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "aad5d065-9532-4c83-a668-a0d882891dd0")
+		)
+		(pin "3"
+			(uuid "c7925ac7-598e-4bf2-a0cd-0a5aeb70be8b")
+		)
+		(pin "2"
+			(uuid "4d7022af-ea68-48ff-8c00-dd81a3ddfb2d")
+		)
+		(pin "1"
+			(uuid "d2981c6a-04d2-4d96-8543-ed5b19e5030d")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 232.41 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "319b89db-6672-4f63-84fd-c3bdcb768355")
+		(property "Reference" "C18"
+			(at 233.68 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 233.68 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 232.41 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "10eb1f80-e903-42f2-b141-b580520f63fa")
+		)
+		(pin "1"
+			(uuid "e11af98d-2a82-4375-9b7a-50e7ed1b901f")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 339.09 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3397104b-1172-4664-ba7b-b29a96e2ab73")
+		(property "Reference" "#PWR056"
+			(at 339.09 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 337.058 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 339.09 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 339.09 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5b177c23-0cd2-41dd-b4bc-427c1429c778")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 613.41 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "35d28550-a56d-40d9-9f86-762924db9716")
+		(property "Reference" "#PWR069"
+			(at 613.41 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 611.378 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 613.41 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 613.41 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 613.41 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d0c399b3-98a5-4226-851d-833d8c8e5471")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 35.56 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3c0838e9-75b1-4098-840c-0a10a0fa42b9")
+		(property "Reference" "#PWR030"
+			(at 35.56 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 35.56 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 35.56 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -873,7 +4664,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 69.85 17.78 0)
+		(at 308.61 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -881,9 +4672,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "42561350-f3da-4509-915e-99db414dc395")
-		(property "Reference" "#PWR031"
-			(at 69.85 21.59 0)
+		(uuid "3e3346c4-b608-48db-9234-bee993043be1")
+		(property "Reference" "#PWR039"
+			(at 308.61 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -894,7 +4685,7 @@
 			)
 		)
 		(property "Value" "+5V_LED"
-			(at 69.85 13.97 0)
+			(at 308.61 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -904,7 +4695,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 17.78 0)
+			(at 308.61 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -915,7 +4706,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 17.78 0)
+			(at 308.61 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -926,7 +4717,84 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 69.85 17.78 0)
+			(at 308.61 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "04d1eddc-a0fa-4de2-aeb6-9c78b8d1841f")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 64.77 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "42561350-f3da-4509-915e-99db414dc395")
+		(property "Reference" "#PWR031"
+			(at 64.77 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 64.77 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 64.77 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -950,7 +4818,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 49.53 40.64 0)
+		(at 35.56 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -958,9 +4826,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4379bb3e-6ba1-4ad1-88ee-782a6ce47a6b")
-		(property "Reference" "#PWR046"
-			(at 49.53 46.99 0)
+		(uuid "42e17f93-1c59-4e4f-9904-e7f6789db730")
+		(property "Reference" "#PWR071"
+			(at 35.56 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -971,7 +4839,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 47.498 40.894 0)
+			(at 33.528 75.184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -981,7 +4849,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 40.64 0)
+			(at 35.56 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -992,7 +4860,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 40.64 0)
+			(at 35.56 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1003,7 +4871,84 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 49.53 40.64 0)
+			(at 35.56 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e1e21fa-4f4d-4fcd-9a07-5b0c5fbcce01")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 35.56 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4379bb3e-6ba1-4ad1-88ee-782a6ce47a6b")
+		(property "Reference" "#PWR046"
+			(at 35.56 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.528 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 35.56 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1027,7 +4972,7 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 69.85 33.02 0)
+		(at 64.77 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1037,7 +4982,7 @@
 		(dnp no)
 		(uuid "450d6f43-ddb0-4363-9120-a15a712dd9ab")
 		(property "Reference" "LED2"
-			(at 69.85 21.082 0)
+			(at 64.77 22.352 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1047,7 +4992,7 @@
 			)
 		)
 		(property "Value" "MX_SK6812MINI-E"
-			(at 69.85 23.622 0)
+			(at 64.77 24.892 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1057,7 +5002,7 @@
 			)
 		)
 		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 69.85 33.02 0)
+			(at 64.77 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1068,7 +5013,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 33.02 0)
+			(at 64.77 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1079,7 +5024,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 69.85 33.02 0)
+			(at 64.77 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1111,8 +5056,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 49.53 33.02 0)
+		(lib_id "power:+5V")
+		(at 582.93 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1120,9 +5065,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "91e5b613-fba2-448d-93a1-495fc94e4494")
-		(property "Reference" "LED1"
-			(at 49.53 21.082 0)
+		(uuid "463a05bf-8975-426e-9feb-899a6f5bda53")
+		(property "Reference" "#PWR066"
+			(at 582.93 22.86 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1131,18 +5077,18 @@
 				)
 			)
 		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 49.53 23.622 0)
+		(property "Value" "+5V_LED"
+			(at 582.93 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 49.53 33.02 0)
+		(property "Footprint" ""
+			(at 582.93 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1153,7 +5099,476 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 33.02 0)
+			(at 582.93 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 582.93 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8550c61d-0a47-4c7f-be2d-5bc0587e08cb")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 201.93 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "46a7d163-3249-44f6-83e0-f402ce98cc43")
+		(property "Reference" "C17"
+			(at 203.2 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 203.2 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 201.93 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a72f3f5f-6933-40f5-acd4-f3b37e139e1b")
+		)
+		(pin "1"
+			(uuid "0c9dc312-3c54-414d-9402-61662686756f")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 400.05 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4a10b058-7156-4141-89c0-3f60d4fa6966")
+		(property "Reference" "#PWR058"
+			(at 400.05 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 398.018 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 400.05 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 400.05 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 400.05 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cfc5611a-eb08-48b9-a1ee-5122d829f15e")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 49.53 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4d98ae1a-cbe9-416c-93f0-885aa628a834")
+		(property "Reference" "C12"
+			(at 50.8 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 50.8 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 49.53 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a28f763d-eea5-4511-8544-c59ac445ede0")
+		)
+		(pin "1"
+			(uuid "054c8577-4304-4018-929c-ed172151abe6")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 461.01 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4f0fc4dd-0fc0-4d15-b1aa-2ebd014972c4")
+		(property "Reference" "#PWR044"
+			(at 461.01 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 461.01 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 461.01 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 461.01 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 461.01 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3bdb6e61-91b9-4541-87b9-0ec2828c7753")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 430.53 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "53a17f82-b4be-4962-ba1d-0224a7b1ec54")
+		(property "Reference" "#PWR043"
+			(at 430.53 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 430.53 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 430.53 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 430.53 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 430.53 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5166f2e5-8c9b-452d-93a7-884e09c40181")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 491.49 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "55701eaf-6028-49ce-982e-0cb97a92f8b0")
+		(property "Reference" "LED16"
+			(at 491.49 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 491.49 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 491.49 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 491.49 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1164,7 +5579,1056 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 49.53 33.02 0)
+			(at 491.49 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "afd6d630-680e-4dba-b401-302811a2b8ae")
+		)
+		(pin "3"
+			(uuid "94641160-1ef1-4fe8-a3f2-76db008da6cd")
+		)
+		(pin "2"
+			(uuid "318a1b06-eb30-4671-af90-b16ab5b027a3")
+		)
+		(pin "1"
+			(uuid "097a40cc-39b5-4184-9373-16d3951e2c54")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 384.81 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5fc70a39-67b4-4dba-b836-3274ec76c3ef")
+		(property "Reference" "C23"
+			(at 386.08 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 386.08 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 384.81 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 384.81 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 384.81 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0fc2a2e1-0464-4440-947b-1498a69d52c4")
+		)
+		(pin "1"
+			(uuid "37b02414-4208-44fa-bd36-6fa896429c3e")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 247.65 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "636a22cd-8dfd-4ade-882c-5fc3de1d95f4")
+		(property "Reference" "LED8"
+			(at 247.65 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 247.65 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 247.65 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 247.65 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "8c7e9bda-12ac-4936-aa09-89be7e2be721")
+		)
+		(pin "3"
+			(uuid "79992b04-2e07-4dd3-9d6f-00de68ebec2d")
+		)
+		(pin "2"
+			(uuid "e37d4402-d536-42cf-a06c-edae1b2e2ac2")
+		)
+		(pin "1"
+			(uuid "20e50085-44ba-442f-8887-c7fc38c21ef8")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 308.61 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6415c8cb-9eab-4abc-a527-b8dcbdc59ed8")
+		(property "Reference" "#PWR055"
+			(at 308.61 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 306.578 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 308.61 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 308.61 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 308.61 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "928646ff-f07a-4f31-8f53-90b365c3896a")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 17.78 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "677debc3-b701-4781-a199-5f46cb4a2e52")
+		(property "Reference" "C11"
+			(at 19.05 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 19.05 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 17.78 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 17.78 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 17.78 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "14eac182-09b3-4017-8ed9-a9057107bb88")
+		)
+		(pin "1"
+			(uuid "3b3eb2b9-cc20-4e2e-bd28-38fcfd427d34")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 552.45 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "67a7c05f-98ff-4486-a64f-86fe08bf4dc5")
+		(property "Reference" "LED18"
+			(at 552.45 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 552.45 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 552.45 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 552.45 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 552.45 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "e6dbf9a9-cb0c-4716-842d-bcab32c298c6")
+		)
+		(pin "3"
+			(uuid "f492d0e4-19ea-46c3-b770-da5e74ef62c2")
+		)
+		(pin "2"
+			(uuid "dbb3e319-8996-4fbb-8dd5-f686f45e6ed3")
+		)
+		(pin "1"
+			(uuid "7cc87799-8ccb-4ead-ad4c-e5cc6e25823e")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 35.56 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6971575c-3e6e-46dc-a0e0-ad3f36d0a196")
+		(property "Reference" "#PWR070"
+			(at 35.56 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 35.56 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 35.56 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb9605e3-8e06-44f5-8517-5d4c060ce52e")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 461.01 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7cf25475-3045-4cf1-bff5-e96f15b32460")
+		(property "Reference" "LED15"
+			(at 461.01 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 461.01 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 461.01 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 461.01 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 461.01 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "76dbe4a1-5fc1-4f94-82e8-a33824a52480")
+		)
+		(pin "3"
+			(uuid "ff7563d0-c847-4295-ac47-b767b30ce347")
+		)
+		(pin "2"
+			(uuid "b0c02f44-e0ee-4fbd-9526-6bef69d5902e")
+		)
+		(pin "1"
+			(uuid "397e5e45-a501-417c-94a3-3aa9c46c14ae")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 521.97 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7df5dd4f-c3d4-4909-b319-d224879ac9c7")
+		(property "Reference" "#PWR062"
+			(at 521.97 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 521.97 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 521.97 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 521.97 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 521.97 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4b90d364-21c5-4024-b0b0-06db1bebecc3")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 217.17 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "853011c4-17fc-4dcb-9727-39ddda96b318")
+		(property "Reference" "#PWR036"
+			(at 217.17 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 217.17 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 217.17 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "895563d1-30ff-4ad8-aa86-ffc5bb433830")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 491.49 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8dcb206e-ce60-4b1c-bd7a-3a3ce496a4b6")
+		(property "Reference" "#PWR061"
+			(at 491.49 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 489.458 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 491.49 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 491.49 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 491.49 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a61b3bc0-e68b-4945-a773-533359b852ca")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 521.97 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "90afc75f-aed9-4e18-88c0-7f62a9976796")
+		(property "Reference" "#PWR063"
+			(at 521.97 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 519.938 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 521.97 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 521.97 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 521.97 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "385b0ceb-1197-4c76-a493-0aab751949da")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 308.61 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91c3beef-3226-4279-9b5c-30ed4a08d627")
+		(property "Reference" "LED10"
+			(at 308.61 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 308.61 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 308.61 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 308.61 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 308.61 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "5fa50ac4-35ef-41b4-ac06-87b2b83ab923")
+		)
+		(pin "3"
+			(uuid "326ff5f0-c5a0-4e84-8c5d-fed3a4064634")
+		)
+		(pin "2"
+			(uuid "31973c7f-7d1a-46a0-b758-c820d1d8b7df")
+		)
+		(pin "1"
+			(uuid "ce595d95-945f-41f0-86c4-4cdb18391660")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 35.56 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91e5b613-fba2-448d-93a1-495fc94e4494")
+		(property "Reference" "LED1"
+			(at 35.56 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 35.56 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 35.56 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 35.56 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1197,7 +6661,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 69.85 40.64 0)
+		(at 461.01 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1205,9 +6669,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "aed581dd-afc8-4f4f-a3b2-829d586fe44b")
-		(property "Reference" "#PWR047"
-			(at 69.85 46.99 0)
+		(uuid "96a88fcb-1d65-474e-9955-edc2e972ad1b")
+		(property "Reference" "#PWR060"
+			(at 461.01 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1218,7 +6682,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 67.818 40.894 0)
+			(at 458.978 42.164 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1228,7 +6692,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 40.64 0)
+			(at 461.01 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1239,7 +6703,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 40.64 0)
+			(at 461.01 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1250,7 +6714,1048 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 40.64 0)
+			(at 461.01 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e7183bee-25e6-4fc0-9781-2c78e8a9f3ce")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 476.25 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "96bfa7d9-deaf-44be-a7e7-387ab11ca207")
+		(property "Reference" "C26"
+			(at 477.52 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 477.52 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 476.25 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 476.25 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 476.25 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "674cacb6-7797-4e04-8fb0-85951b50d9d3")
+		)
+		(pin "1"
+			(uuid "53f2d1a0-c590-4fe1-b69e-f59d983b49f9")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 156.21 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9839dbbd-8200-4d63-a935-a0a81d6ac33a")
+		(property "Reference" "#PWR050"
+			(at 156.21 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.178 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eac9bda9-5553-44e9-89b7-3b99fde80f21")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 369.57 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "98a9afa9-d6e5-4ca9-861f-670739577a34")
+		(property "Reference" "LED12"
+			(at 369.57 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 369.57 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 369.57 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 369.57 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 369.57 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "d0914f19-d472-406c-8ee2-ca93fc85516e")
+		)
+		(pin "3"
+			(uuid "a6924f6f-5972-4a6f-9060-4a42375577e7")
+		)
+		(pin "2"
+			(uuid "9c8186c0-7b09-4598-a9da-54e087ab17c4")
+		)
+		(pin "1"
+			(uuid "3fc33642-b1e1-461a-bf86-1c49e47310a1")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 217.17 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "999685fb-50b2-4464-bab5-a357dacdef4f")
+		(property "Reference" "#PWR052"
+			(at 217.17 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.138 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 217.17 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc0ad921-8985-4dd0-b502-601473a62dd8")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 369.57 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9ad3b4c4-b2ad-4c44-8586-532d5091f1ef")
+		(property "Reference" "#PWR041"
+			(at 369.57 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 369.57 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 369.57 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 369.57 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 369.57 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "67288b6f-c95a-458b-a02f-bf5bea4d4bef")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 537.21 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9c82aaf3-4170-4ea1-9588-9497984b0435")
+		(property "Reference" "C28"
+			(at 538.48 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 538.48 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 537.21 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 537.21 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 537.21 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "aeedac87-87f5-426e-9543-f7c4ca1e85a5")
+		)
+		(pin "1"
+			(uuid "0cc791b0-e8ab-4191-ae78-42c961bf3ca4")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 506.73 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a2538952-bfa5-4402-a57f-d81d32ac4b7a")
+		(property "Reference" "C27"
+			(at 508 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 508 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 506.73 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 506.73 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 506.73 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "af897b2f-f2c2-46c5-9c6b-ffbfdc11bef0")
+		)
+		(pin "1"
+			(uuid "4a56fd3c-9d1c-4382-9c35-897a535de9ff")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 521.97 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a566dd35-5dc2-4765-b9b0-ad1eea858c3c")
+		(property "Reference" "LED17"
+			(at 521.97 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 521.97 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 521.97 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 521.97 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 521.97 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "c1fbf13c-1d15-4bf1-8b40-7d5f50325e96")
+		)
+		(pin "3"
+			(uuid "daf5aaa6-a0f0-4377-a213-44f046f4cd62")
+		)
+		(pin "2"
+			(uuid "38f98c9f-1d32-43a5-8b23-ec355bad5d55")
+		)
+		(pin "1"
+			(uuid "f7201812-0891-4305-9e2c-864f5814331f")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 247.65 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a68fac22-2d2d-4398-a29f-213c10016770")
+		(property "Reference" "#PWR053"
+			(at 247.65 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 245.618 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 247.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 247.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7b8021ab-2c6d-4984-9196-12ee1d0bbe2a")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.69 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ac96448e-1530-48ef-9e07-ee8294aa6cd2")
+		(property "Reference" "#PWR051"
+			(at 186.69 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 184.658 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "af8b156f-40bd-4f12-97ad-7eb46c7a2d51")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 293.37 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad5390a6-2deb-422b-bca8-dacab8317dba")
+		(property "Reference" "C20"
+			(at 294.64 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 294.64 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 293.37 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 293.37 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 293.37 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7d3822b7-e2a3-4896-93ea-8624c9968c95")
+		)
+		(pin "1"
+			(uuid "617c873b-38d2-43b8-9d78-f451322f7f3e")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 125.73 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ae2af2b7-1372-457b-8f90-281a193e5ed0")
+		(property "Reference" "LED4"
+			(at 125.73 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 125.73 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 125.73 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 125.73 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "cba4bad1-43fb-4940-b25b-f63c7f32a2d2")
+		)
+		(pin "3"
+			(uuid "126b0695-794b-42be-ba70-47d527f94f02")
+		)
+		(pin "2"
+			(uuid "976fce5a-ad67-42f9-b30e-8cd737cc2430")
+		)
+		(pin "1"
+			(uuid "d07e60ca-2eac-4109-831e-ac60779427e2")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 64.77 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aed581dd-afc8-4f4f-a3b2-829d586fe44b")
+		(property "Reference" "#PWR047"
+			(at 64.77 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 62.738 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1273,8 +7778,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 90.17 33.02 0)
+		(lib_id "Device:C_Small")
+		(at 567.69 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1282,29 +7787,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "bf69877f-e5f3-40f4-83d8-decd9e7ceb25")
-		(property "Reference" "LED3"
-			(at 90.17 21.082 0)
+		(uuid "af32ef51-4ecc-4391-9b3b-0a2f4fad1508")
+		(property "Reference" "C29"
+			(at 568.96 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 90.17 23.622 0)
+		(property "Value" "100n"
+			(at 568.96 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 90.17 33.02 0)
+		(property "Footprint" ""
+			(at 567.69 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1315,7 +7822,240 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 33.02 0)
+			(at 567.69 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 567.69 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a7583bc4-67ad-4918-bd01-4210b17c103d")
+		)
+		(pin "1"
+			(uuid "9525b650-0cad-48b8-9a8d-294b158bc5e1")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 430.53 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b85de230-b0a2-49b0-837d-b3249b386742")
+		(property "Reference" "#PWR059"
+			(at 430.53 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 428.498 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 430.53 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 430.53 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 430.53 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c0fbe561-7d6b-4424-a739-33fd4778747f")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 369.57 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ba2e6cb8-988c-4dc3-8a16-3c235a6843a9")
+		(property "Reference" "#PWR057"
+			(at 369.57 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 367.538 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 369.57 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 369.57 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 369.57 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f12d1f26-c8db-4cb1-84df-fa362bd0d863")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 95.25 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bf69877f-e5f3-40f4-83d8-decd9e7ceb25")
+		(property "Reference" "LED3"
+			(at 95.25 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 95.25 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 95.25 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1326,7 +8066,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 90.17 33.02 0)
+			(at 95.25 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1358,8 +8098,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 90.17 40.64 0)
+		(lib_id "Device:C_Small")
+		(at 110.49 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1367,30 +8107,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d6ee6114-f175-4618-be8b-cee88e7db221")
-		(property "Reference" "#PWR048"
-			(at 90.17 46.99 0)
-			(hide yes)
+		(uuid "caa87528-c365-4b22-8fd5-724997597373")
+		(property "Reference" "C14"
+			(at 111.76 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 88.138 40.894 0)
+		(property "Value" "100n"
+			(at 111.76 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 40.64 0)
+			(at 110.49 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1401,7 +8142,411 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 40.64 0)
+			(at 110.49 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 110.49 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "efd6b207-628c-40c9-afa7-ed0e98e2f0d8")
+		)
+		(pin "1"
+			(uuid "cad3497f-bd90-40e7-aea3-9da35f21039d")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 598.17 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cbadae2c-fb94-4a72-853b-e08f4e96d9ac")
+		(property "Reference" "C30"
+			(at 599.44 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 599.44 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 598.17 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 598.17 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 598.17 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9dcda09a-2d70-467d-9dc7-3f6d54556eb4")
+		)
+		(pin "1"
+			(uuid "eaf22024-3fb9-47de-9536-a5dca4b312dc")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 80.01 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cbc8a564-7849-43c5-9cbb-bf539f56ef16")
+		(property "Reference" "C13"
+			(at 81.28 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 81.28 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 80.01 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "88548869-cc1c-4404-b9cc-a89f1613b4de")
+		)
+		(pin "1"
+			(uuid "6fce79a7-abdf-4b2e-9955-9ff7c929fb3b")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 217.17 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cc188f0a-36f5-4397-92a9-0c314241696e")
+		(property "Reference" "LED7"
+			(at 217.17 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 217.17 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 217.17 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 217.17 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "4a031795-bca5-4bc8-93aa-65a2b81b2913")
+		)
+		(pin "3"
+			(uuid "da17a416-88a6-41b5-9a14-860564eb4cd6")
+		)
+		(pin "2"
+			(uuid "addec8c9-6baa-4ffd-98c0-55ea6a056a8e")
+		)
+		(pin "1"
+			(uuid "4cac39df-b93b-4b2c-b393-fd323a630afb")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 491.49 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cda3e326-517b-4d9c-bb2e-29397ac6ef25")
+		(property "Reference" "#PWR045"
+			(at 491.49 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 491.49 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 491.49 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 491.49 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 491.49 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cca8df72-4be3-4629-9f5f-264e14dd0405")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d6ee6114-f175-4618-be8b-cee88e7db221")
+		(property "Reference" "#PWR048"
+			(at 95.25 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.218 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1412,7 +8557,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 40.64 0)
+			(at 95.25 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1435,8 +8580,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 31.75 33.02 90)
+		(lib_id "power:+5V")
+		(at 247.65 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1444,9 +8589,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ea3a3d14-f1dc-4f2b-b0bc-b44d281489d6")
-		(property "Reference" "R24"
-			(at 31.75 30.48 90)
+		(uuid "de03ade3-3720-4514-8137-958e87dcc35a")
+		(property "Reference" "#PWR037"
+			(at 247.65 22.86 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1455,18 +8601,18 @@
 				)
 			)
 		)
-		(property "Value" "330"
-			(at 31.75 33.02 90)
+		(property "Value" "+5V_LED"
+			(at 247.65 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
-		(property "Footprint" "Mars_Library:R_0603"
-			(at 31.75 34.798 90)
+		(property "Footprint" ""
+			(at 247.65 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1477,7 +8623,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 33.02 0)
+			(at 247.65 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1487,8 +8633,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 31.75 33.02 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 247.65 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1499,15 +8645,899 @@
 			)
 		)
 		(pin "1"
-			(uuid "379c473a-3e99-482f-ba29-681638b42fe1")
-		)
-		(pin "2"
-			(uuid "56639df0-ec38-48b5-80dd-ccb37a671518")
+			(uuid "bada8d8d-0694-420b-a979-a76c5f057324")
 		)
 		(instances
 			(project "smoke85"
 				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
-					(reference "R24")
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 125.73 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "de43cd7d-75c0-4e96-a71e-1e29150f36f7")
+		(property "Reference" "#PWR033"
+			(at 125.73 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 125.73 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 125.73 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ad2ee9f-7f28-4435-ab25-2868a9ef053b")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 186.69 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e05b39b3-c620-4f3f-b0c9-6e6b1c071a8f")
+		(property "Reference" "#PWR035"
+			(at 186.69 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 186.69 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 186.69 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b022ee44-af08-4062-8dcb-5ca5f061b980")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 323.85 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e20e5dae-ff63-4563-a93e-8bf57a16970d")
+		(property "Reference" "C21"
+			(at 325.12 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 325.12 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 323.85 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 323.85 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 323.85 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8189476c-c99d-4093-b821-5bbeadbcd138")
+		)
+		(pin "1"
+			(uuid "da3f528e-dcb2-4e28-89fa-abcb5f69b04a")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 278.13 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ea30dbaf-a11e-49ae-9139-f4bb96f76d84")
+		(property "Reference" "#PWR038"
+			(at 278.13 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_LED"
+			(at 278.13 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 278.13 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "331b4c15-30d2-421d-b683-9f9acbfd6a6d")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 125.73 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eb3b0639-6fc1-4c0f-bd0b-9adfb08021d1")
+		(property "Reference" "#PWR049"
+			(at 125.73 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.698 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 125.73 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f9b27494-37a6-4bfb-9b1d-a93842c7b21c")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 400.05 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f1c60fe9-aefc-4fe6-a46a-f83e54dce0ab")
+		(property "Reference" "LED13"
+			(at 400.05 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 400.05 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 400.05 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 400.05 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 400.05 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "614c92c1-125d-4b63-8d9b-a02dd8c2264f")
+		)
+		(pin "3"
+			(uuid "81db87f9-9cb0-4361-aa95-194fb41d7c0e")
+		)
+		(pin "2"
+			(uuid "831bdaf5-4279-4f6c-bfcb-bb8f04de856f")
+		)
+		(pin "1"
+			(uuid "f234712d-b721-4763-b5db-a0b91a66f44c")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 20.32 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f2a5a909-ce24-40d8-9ad3-cafc04c4c614")
+		(property "Reference" "C31"
+			(at 21.59 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 21.59 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.32 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 20.32 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3030deda-c6b5-416f-bd67-4ff2db788d94")
+		)
+		(pin "1"
+			(uuid "b310ecb3-b428-43d7-8c44-1672dba3d3c2")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 354.33 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f7e0dd13-b805-4062-baec-ca482c112330")
+		(property "Reference" "C22"
+			(at 355.6 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 355.6 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 354.33 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 354.33 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 354.33 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "944a7c20-59c1-4d09-a012-0c04669e78b1")
+		)
+		(pin "1"
+			(uuid "030f1b6d-4669-4f64-826a-e97e2c77ee97")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 445.77 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fb986ecb-b16f-4f61-8460-b99db76db78e")
+		(property "Reference" "C25"
+			(at 447.04 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 447.04 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 445.77 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 445.77 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 445.77 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fbf6ac72-d588-4539-9421-f0c3ef07e277")
+		)
+		(pin "1"
+			(uuid "9a0d357e-7843-4b9e-b234-031c773e9eaa")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 278.13 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fcb0be72-6987-40b6-a4a6-f624222c6007")
+		(property "Reference" "LED9"
+			(at 278.13 22.352 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 278.13 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 278.13 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 278.13 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "e77d32a0-26c5-40df-a529-1037cb8df418")
+		)
+		(pin "3"
+			(uuid "8fab7d2c-515f-4512-8cf9-ef10f26bd6f7")
+		)
+		(pin "2"
+			(uuid "c22872c8-69df-458e-8dc1-aeb43be4bc0c")
+		)
+		(pin "1"
+			(uuid "844dcde1-c67a-49dc-89ff-6ef39ef9f47c")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
+		(at 35.56 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ff8c99b7-6417-4e07-aae2-8571b3ff72c0")
+		(property "Reference" "LED21"
+			(at 35.56 55.372 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6812MINI-E"
+			(at 35.56 57.912 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(at 35.56 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 35.56 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "9ac127ed-725b-41fc-8573-a1ab03f1712e")
+		)
+		(pin "3"
+			(uuid "c17a8ba1-2c28-473f-82a4-423de9479532")
+		)
+		(pin "2"
+			(uuid "ba5412c2-9b35-4c81-ab24-7ad12db32081")
+		)
+		(pin "1"
+			(uuid "6be43c50-7e9d-491c-8038-9105fb6ca560")
+		)
+		(instances
+			(project "smoke85"
+				(path "/4d291fcf-fdf2-46ba-aa57-60bc75f9cc32/6bd1eec4-d351-46cb-8a09-46df35303cfb"
+					(reference "LED21")
 					(unit 1)
 				)
 			)
